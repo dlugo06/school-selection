@@ -1,0 +1,11 @@
+  <h1>Welcome Admin from <%= @district %></h1>
+  <h2>Click below to find your matching district.</h2>
+  <h3>
+    <form method="post" >
+      <input value="Find Match" type="submit" />
+    </form>
+  </h3>
+  <% @self_schools.each do |s| %>
+    <p>Here is a school: </p>
+    <%= s['name'] %>
+  <% end %>
